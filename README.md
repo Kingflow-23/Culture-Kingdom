@@ -1,6 +1,4 @@
 # Culture kingdom
-#### Video Demo: 
-https://youtu.be/8X5IuA3kI6M
 
 #### Description:
 
