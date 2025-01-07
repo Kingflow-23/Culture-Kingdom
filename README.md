@@ -7,6 +7,7 @@ This project is a console-based quiz game managed by an AI assistant named AI KF
 ## Backgrounds and musics for the game application.
 
 Backgrounds comes from https://fr.freepik.com 
+
 Musics comes from https://freesound.org 
 
 # Features
