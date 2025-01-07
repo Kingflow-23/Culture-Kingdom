@@ -1,2 +1,5 @@
 regex == 2024.9.11
 inflect == 7.4.0
+opencv-python  
+pygame == 2.6.1
+requests == 2.32.3

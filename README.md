@@ -4,6 +4,11 @@
 
 This project is a console-based quiz game managed by an AI assistant named AI KF23. Players compete by answering questions of varying difficulties, earning points based on their answers. The game supports multiple players and allows for a customizable number of rounds and difficulty levels.
 
+## Backgrounds and musics for the game application.
+
+Backgrounds comes from https://fr.freepik.com 
+Musics comes from https://freesound.org 
+
 # Features
 
 ## Dynamic Player Management: 

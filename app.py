@@ -8,12 +8,12 @@ from project import get_question
 pygame.init()
 
 # Load sounds
-title_music_path = "title.mp3"
-settings_music_path = "settings.mp3"
-question_music_path = "question.wav"
-result_sound = pygame.mixer.Sound("endgame.mp3")
-correct_sound = pygame.mixer.Sound("correct.mp3")
-incorrect_sound = pygame.mixer.Sound("incorrect.wav")
+title_music_path = "Musics/title.mp3"
+settings_music_path = "Musics/settings.mp3"
+question_music_path = "Musics/question.wav"
+result_sound = pygame.mixer.Sound("Musics/endgame.mp3")
+correct_sound = pygame.mixer.Sound("Musics/correct.mp3")
+incorrect_sound = pygame.mixer.Sound("Musics/incorrect.wav")
 
 # Get the current screen size
 screen_info = pygame.display.Info()
@@ -29,10 +29,10 @@ font = pygame.font.Font(None, FONT_SIZE)
 
 # Background video paths
 background_video_paths = {
-    "menu": "background_title.mp4",
-    "settings": "background_settings.mp4",
-    "questions": "background_question.mp4",
-    "result": "pre_result.mp4",
+    "menu": "Backgrounds/background_title.mp4",
+    "settings": "Backgrounds/background_settings.mp4",
+    "questions": "Backgrounds/background_question.mp4",
+    "result": "Backgrounds/pre_result.mp4",
 }
 
 # Load background videos
@@ -306,7 +306,7 @@ def game_settings(solo: bool = False) -> tuple:
 
     txt_font = pygame.font.Font(None, FONT_SIZE)
 
-    settings_background = pygame.image.load("pregame.jpg")
+    settings_background = pygame.image.load("Backgrounds/pregame.jpg")
     settings_background = pygame.transform.scale(
         settings_background, (screen_width, screen_height)
     )
@@ -602,7 +602,7 @@ def choose_difficulty(player: str) -> str:
 
     while selecting:
 
-        settings_background = pygame.image.load("pregame.jpg")
+        settings_background = pygame.image.load("Backgrounds/pregame.jpg")
         settings_background = pygame.transform.scale(
             settings_background, (screen_width, screen_height)
         )
@@ -652,7 +652,7 @@ def show_ranking(scores: dict):
     """
     pygame.mixer.music.stop()
 
-    result_image = pygame.image.load("results.jpg")
+    result_image = pygame.image.load("Backgrounds/results.jpg")
     video_capture = background_videos["result"]
 
     fps = video_capture.get(cv2.CAP_PROP_FPS)
